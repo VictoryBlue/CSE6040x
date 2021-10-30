@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Error</title>
+    <style>
+        .error-container {
+            margin: auto;
+            margin-top: 10%;
+            padding: 20px;
+            width: 400px;
+            border: 1px solid #e4e4e4;
+            background-color: #fcfcfc;
+        }
+        .error-container h2 {
+            padding-bottom: 15px;
+            border-bottom: 4px solid #F5D580;
+        }
+        a.error-email {
+            text-decoration: none;
+            color: #004F9F;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <img src="https://www.gatech.edu/sites/all/themes/gt/images/logos/gt-logo-footer-retina.png"><br/>
+        <h2>Error</h2>
+        <table summary="Error" border="0" cellpadding="3" cellspacing="1" width="400">
+            <tr valign="top">
+                <td>
+                    An error has occurred while trying to connect to cse6040.gatech.edu.<br/>
+                </td>
+            </tr>
+            <tr valign="top">
+                    <td>
+                        <strong>Troubleshooting steps:</strong><br/>
+                        <ol>
+                            <li>Refresh the page</li>
+                            <li>Check <a href="https://status.gatech.edu" target="_blank">status.gatech.edu</a> for any current network or Plesk webhosting issues</li>
+                            <li>Connect to the <a href="https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn" target="_blank">campus VPN</a> and then retry</li>
+                        </ol>
+                    </td>
+                </tr>
+            <tr valign="top">
+                <td>
+                    Still seeing this error? Contact <a class="error-email" href="mailto:support@oit.gatech.edu">OIT Webhosting support</a> with the following information:<br/><br/>
+                
+                    <strong>Timestamp:</strong> <span id="timestamp"></span><br/>
+                    <strong>Hostname:</strong> cse6040.gatech.edu<br/>
+                    <strong>Event ID:</strong> 7023259118059942568<br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<script>
+    var d = new Date();
+    document.getElementById("timestamp").innerHTML = d;
+</script>
+
+</body>
+</html>
